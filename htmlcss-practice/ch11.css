@@ -7,9 +7,9 @@ html {
 body {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
 }
 section {
+  position: relative;
   width: 50vw;
   margin: 20px;
   background-color: white;
@@ -17,6 +17,7 @@ section {
   box-shadow: 5px 5px 3px gray;
   padding: 30px 20px;
   flex-wrap: wrap;
+  min-height: 60vh;
 }
 
 h2 {
@@ -25,7 +26,11 @@ h2 {
   margin-bottom: 20px;
   text-align: center;
 }
-
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
 h5 {
   font-size: 15px;
   color: rgba(181, 181, 181, 0.7);
@@ -112,15 +117,18 @@ h5 {
   width: 70%;
 }
 .play-bar {
-  position: relative;
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 60px;
   border-radius: 30px;
   background-color: black;
   color: white;
+  box-shadow: 10px 10px 10px black;
 }
 
 .play-bar-des {
@@ -214,9 +222,6 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: absolute;
-  top: -15px;
-  left: 50%; */
   box-shadow: 5px 5px 5px black;
 }
 .playnow-bar__btn > i:last-child {

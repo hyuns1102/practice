@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Random Number Game</h1>
+
+    <div class="js-generateNum">
+      <h2></h2>
+      <div class="slider">
+        <input
+          class="slider-bar"
+          type="range"
+          min="0"
+          max="150"
+          list="slider-ticks"
+        />
+        <datalist id="slider-ticks">
+          <option value="0"></option>
+          <option value="25"></option>
+          <option value="50"></option>
+          <option value="75"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
+    </div>
+
+    <div class="js-guessNum">
+      <span>Guess the number: </span>
+      <form class="js-form">
+        <input class="js-input" type="number" min="0" />
+        <input class="js-submit" type="submit" value="Play!" />
+      </form>
+    </div>
+
+    <div class="js-result no-show">
+      <div>
+        You chose:
+        <span class="js-resultYouChose"></span>
+        The machine chose :
+        <span class="js-resultMachhineChose"></span>
+      </div>
+      <span class="js-resultCompete"></span>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!--ch6 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Where are you from?</h1>
+    <select>
+      <option value="">--- Choose Your Country ---</option>
+      <option value="Korea">Korea</option>
+      <option value="Greece">Greece</option>
+      <option value="Turkey">Turkey</option>
+      <option value="Finland">Finland</option>
+    </select>
+    <script src="index.js"></script>
+  </body>
+</html> -->

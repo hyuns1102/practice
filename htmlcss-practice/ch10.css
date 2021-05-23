@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Newsreader", serif;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(243, 220, 10);
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-bar {
+  /* position: absolute; */
+  /* top: 80px; */
+  position: relative;
+  top: -25px;
+  margin: 0 auto;
+  width: 90%;
+  /* display: flex;
+  justify-content: center; */
+  height: 50px;
+}
+.search-bar form {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-bar input {
+  /* border-color: transparent; */
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gray;
+  padding-left: 30px;
+  padding-right: 60px;
+  /* display: flex; */
+}
+
+input::placeholder {
+  opacity: 0.5;
+}
+.search-bar button {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 20px;
+  opacity: 0.1;
+}
+
+main {
+  padding: 100px 20px;
+}
+
+main > section > span {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main > section {
+  margin-bottom: 30px;
+}
+
+.bookOfTheDay .bookOfTheDay-info {
+  display: flex;
+}
+
+.bookOfTheDay .bookOfTheDay-info .bookOfTheDay-info-image > img {
+  height: 150px;
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.bookOfTheDay-info-name-1 {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bookOfTheDay-info-name__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.bookOfTheDay-info-name__rate {
+  font-size: 15px;
+  color: orange;
+}
+.bookOfTheDay-info-name-2 {
+  margin-top: 10px;
+  height: 50%;
+}
+
+.bookOfTheDay-info__btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 180px;
+}
+
+.bookOfTheDay-info__btn > button {
+  border-color: transparent;
+  font-weight: bold;
+  margin: 5px 1px;
+}
+
+.bookOfTheDay-info-name__btn-bookmark {
+  background-color: orange;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.bookOfTheDay-info-name__btn-booknow {
+  height: 30px;
+  width: 110px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+.topAdventure-info {
+  display: flex;
+  overflow-x: scroll;
+}
+.topAdventure-info > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  width: 80px;
+}
+.topAdventure-info__rate {
+  width: 80px;
+}
+.topAdventure-info__rate > i {
+  font-size: 5px;
+  color: orange;
+}
+
+.topAdventure-info__image > img {
+  height: 100px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: green;
+  object-fit: cover;
+}
+
+.popularAuthors-info {
+  display: flex;
+}
+
+.popularAuthors-info-image > img {
+  height: 120px;
+  width: 90px;
+  background-color: orange;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.popularAuthors-info-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.popularAuthors-info-details__name {
+  height: 40%;
+}
+.popularAuthors-info-details__description {
+  height: 60%;
+  width: 200px;
+}

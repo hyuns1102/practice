@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  background-color: mediumaquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes circleMove {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes pianoMove {
+  0% {
+    height: 30px;
+  }
+  20% {
+    height: 80px;
+  }
+  100% {
+    height: 30px;
+  }
+}
+
+.circle {
+  display: flex;
+  justify-content: space-between;
+  width: 9%;
+  margin-bottom: 100px;
+  animation: circleMove 2s cubic-bezier(0.7, 0, 0.84, 0) infinite;
+}
+
+.circle div {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.piano {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+.piano div {
+  background-color: white;
+  width: 10px;
+  height: 30px;
+  margin: 0px 3px;
+}
+
+.piano div:first-child {
+  animation: pianoMove 1s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  animation-delay: 0s;
+}
+
+.piano div:nth-child(2) {
+  animation: pianoMove 1s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  animation-delay: 0.1s;
+}
+
+.piano div:nth-child(3) {
+  animation: pianoMove 1s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  animation-delay: 0.2s;
+}
+
+.piano div:nth-child(4) {
+  animation: pianoMove 1s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  animation-delay: 0.3s;
+}
+
+.piano div:last-child {
+  animation: pianoMove 1s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  animation-delay: 0.4s;
+}
